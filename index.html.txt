@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Friendship Day</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #mainContent {
+      display: none;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .tagline {
+      font-size: 1.8rem;
+      margin-top: 10px;
+      font-style: italic;
+      color: #ffcc70;
+      animation: typewriter 4s steps(20) 1s 1 normal both;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #fff;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #ffcc70;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 1rem;<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Friendship Day</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #mainContent {
+      display: none;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .tagline {
+      font-size: 1.8rem;
+      margin-top: 10px;
+      font-style: italic;
+      color: #ffcc70;
+      animation: typewriter 4s steps(20) 1s 1 normal both;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #fff;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #ffcc70;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 1rem;
+      color: #bbb;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes typewriter {
+      from { width: 0; }
+      to { width: 16ch; }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="tu_hi_yaar_mera.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div id="nameInput">
+    <h1>Write your name</h1>
+    <input type="text" id="username" placeholder="Your name here..." />
+    <button onclick="showMessage()">Submit</button>
+  </div>
+
+  <div id="mainContent">
+    <h1>Happy Friendship Day, <span id="nameDisplay"></span>!</h1>
+    <div class="tagline">Ek Tu Hi Yaar Mera</div>
+  </div>
+
+  <footer>By Shubham</footer>
+
+  <script>
+    function showMessage() {
+      const name = document.getElementById("username").value.trim();
+      if (name) {
+        document.getElementById("nameInput").style.display = "none";
+        document.getElementById("nameDisplay").innerText = name;
+        document.getElementById("mainContent").style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Friendship Day</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #141e30, #243b55);
+      color: #fff;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #mainContent {
+      display: none;
+      animation: fadeIn 2s ease-in-out forwards;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+    }
+
+    .tagline {
+      font-size: 1.8rem;
+      margin-top: 10px;
+      font-style: italic;
+      color: #ffcc70;
+      animation: typewriter 4s steps(20) 1s 1 normal both;
+      white-space: nowrap;
+      overflow: hidden;
+      border-right: 2px solid #fff;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 1rem;
+      border-radius: 5px;
+      border: none;
+      outline: none;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #ffcc70;
+      color: #000;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    footer {
+      position: absolute;
+      bottom: 10px;
+      font-size: 1rem;
+      color: #bbb;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes typewriter {
+      from { width: 0; }
+      to { width: 16ch; }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="tu_hi_yaar_mera.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div id="nameInput">
+    <h1>Write your name</h1>
+    <input type="text" id="username" placeholder="Your name here..." />
+    <button onclick="showMessage()">Submit</button>
+  </div>
+
+  <div id="mainContent">
+    <h1>Happy Friendship Day, <span id="nameDisplay"></span>!</h1>
+    <div class="tagline">Ek Tu Hi Yaar Mera</div>
+  </div>
+
+  <footer>By Shubham</footer>
+
+  <script>
+    function showMessage() {
+      const name = document.getElementById("username").value.trim();
+      if (name) {
+        document.getElementById("nameInput").style.display = "none";
+        document.getElementById("nameDisplay").innerText = name;
+        document.getElementById("mainContent").style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
+      color: #bbb;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes typewriter {
+      from { width: 0; }
+      to { width: 16ch; }
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="tu_hi_yaar_mera.mp3" type="audio/mpeg" />
+    Your browser does not support the audio element.
+  </audio>
+
+  <div id="nameInput">
+    <h1>Write your name</h1>
+    <input type="text" id="username" placeholder="Your name here..." />
+    <button onclick="showMessage()">Submit</button>
+  </div>
+
+  <div id="mainContent">
+    <h1>Happy Friendship Day, <span id="nameDisplay"></span>!</h1>
+    <div class="tagline">Ek Tu Hi Yaar Mera</div>
+  </div>
+
+  <footer>By Shubham</footer>
+
+  <script>
+    function showMessage() {
+      const name = document.getElementById("username").value.trim();
+      if (name) {
+        document.getElementById("nameInput").style.display = "none";
+        document.getElementById("nameDisplay").innerText = name;
+        document.getElementById("mainContent").style.display = "block";
+      }
+    }
+  </script>
+</body>
+</html>
